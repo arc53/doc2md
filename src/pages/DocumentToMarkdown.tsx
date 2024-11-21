@@ -6,6 +6,7 @@ import Markdown from "@/assets/markdown.svg";
 import UploadFile from "@/assets/upload_file.svg";
 import { Button } from "@/components/ui/button";
 import { Spinner } from "@/components/ui/spinner";
+import { DocsGPTWidget } from "docsgpt";
 
 import { useTheme } from "../ThemeContext";
 
@@ -147,6 +148,9 @@ export default function DocumentToMarkdown() {
           )}
         </div>
       </div>
+      <DocsGPTWidget apiKey="ed775f46-a2fc-40c0-9a4d-8de189d5327e"
+      description="Ask your questions about Doc2MD"
+      heroTitle = "Welcome to Doc2MD!" />
     </div>
   );
 }
