@@ -12,7 +12,7 @@ const Nav = () => {
       <div className="flex gap-2 ml-4">
         <img src={Logo} className="filter dark:invert" />
         <span className="text-[#18181B] font-bold dark:text-white">Doc2MD</span>
-        <span className="text-[#8B8989]">by Arc53</span>
+        <span className="text-[#8B8989]"><a href="https://arc53.com" target="_blank">by Arc53</a></span>
       </div>
       <div className="flex gap-4 mr-4">
         <a target="_blank" href="https://github.com/arc53/doc2md">
