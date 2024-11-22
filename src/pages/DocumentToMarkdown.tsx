@@ -102,7 +102,7 @@ export default function DocumentToMarkdown() {
           {errorMessage}
         </div>
       </div>
-      <div className="md:w-1/2 border py-4 rounded-xl">
+      <div className="w-full md:w-1/2 border py-4 rounded-xl">
         <div className="flex items-center justify-between px-4">
           <div className="flex items-center gap-2">
             <img className="filter dark:invert" src={Markdown} />
@@ -128,7 +128,7 @@ export default function DocumentToMarkdown() {
           )}
         </div>
         <div
-          className={`backdrop-blur-lg bg-background/95 h-[50vh] md:h-[75vh] mt-4 p-4 border-t whitespace-pre-wrap overflow-scroll ${
+          className={`backdrop-blur-lg bg-background/95 h-[50vh] md:h-[75vh] mt-4 p-4 border-t whitespace-pre-wrap overflow-y-auto ${
             !markdown ? "italic text-[#000000]/80 dark:text-[#ffffff]/50" : ""
           }`}
         >
